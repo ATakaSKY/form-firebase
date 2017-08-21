@@ -1,0 +1,20 @@
+{
+  "name": "form_firebase",
+  "version": "0.0.1",
+  "description": "Simple form with firebase",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Aakash Thakur",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11"
+  }
+}
