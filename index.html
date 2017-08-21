@@ -6,37 +6,59 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div class="container">
             <div class="brand">
-                <h2>Sky Design</h2>
+                <h2><span>Sky</span> Design</h2>
             </div>
 
-            <div class="contact">
-                <ul>
-                    <li>Address</li>
-                    <li>Contact</li>
-                    <li>Email </li>
-                </ul>
-            </div>
+            <section class = "form-contact">
+                <div class="contact">
+                    <ul>
+                        <li><i class="fa fa-address-book-o" aria-hidden="true"></i>Eden Street</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>555-55-5555</li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Sky@kpmg.com </li>
+                    </ul>
+                </div>
 
-            <div class="form">
-                <label>Name</label>
-                <input type="text" placeholder="Name" name="Name" id="Name">
+                <form class="form">
+                    <p class="name">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder="Name" name="Name" id="Name">
+                    </p>
 
-                <label>Email</label>
-                <input type="text" placeholder="Email" name="Name" id="Name">
+                    <p class="email">
+                        <label>Email</label>
+                        <input type="text" placeholder="Email" name="Name" id="Name">
+                    </p>
 
-                <label>Phone Number</label>
-                <input type="text" placeholder="Phone" name="Name" id="Name">
+                    <p class="number">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="Phone" name="Name" id="Name">
+                    </p>
 
-                <label>Age</label>
-                <input type="text" placeholder="Age" name="Name" id="Name">
+                    <p class="age">
+                        <label>Age</label>
+                        <input type="text" placeholder="Age" name="Name" id="Name">
+                    </p>
 
-                <label>Comments</label>
-                <textarea rows="4" cols="50" placeholder="Comments Please" name="Name" id="Name"></textarea>
-            </div>
+                    <p class="comments">
+                        <label>Comments</label>
+                        <textarea rows="4" cols="30" placeholder="Comments Please" name="Name" id="Name"></textarea>
+                    </p>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                
+                
+            </section>
+            
         </div>
+
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

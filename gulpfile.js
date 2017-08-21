@@ -25,9 +25,16 @@ gulp.task('compass', function() {
     .pipe(connect.reload());
 });
 
+gulp.task('scripts',function(){
+    gulp.src('assets/js/*.js')
+    .pipe(gulp.dest('js'))
+    .pipe(connect.reload());
+});
+
 gulp.task('watch',function(){
     gulp.watch('index.html',['html']),
-    gulp.watch('assets/sass/*.scss',['compass']);
+    gulp.watch('assets/sass/*.scss',['compass']),
+    gulp.watch('assets/js/*.js',['scripts']);
 });
 
 gulp.task('connect', function() {
@@ -36,4 +43,4 @@ gulp.task('connect', function() {
   });
 });
  
-gulp.task('default', ['html','compass', 'connect', 'watch']);
+gulp.task('default', ['html','compass', 'scripts','connect', 'watch']);
